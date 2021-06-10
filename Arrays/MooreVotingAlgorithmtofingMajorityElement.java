@@ -1,7 +1,7 @@
 package Arrays;
 
 public class MooreVotingAlgorithmtofingMajorityElement {
- //first 	phase finds out a candidate and guarantees that if there is a majority element in array then 
+//first phase finds out a candidate and guarantees that if there is a majority element in array then 
 //then this candidate is going to be majority element
 	//second phase check that if majority lement found out by first is actually a majority element or not 
 	
