@@ -1,9 +1,9 @@
-package Arrays;
+ package Arrays;
  
 public class StocksBuyAndSell {
 	public static int profit(int price[],int start,int end)
 	{
-		if(start>=end)
+		if(start>=end) //for a single day we cannot maek any profit 
 		{
 			return 0;
 		}
