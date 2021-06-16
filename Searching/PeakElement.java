@@ -32,7 +32,7 @@ public class PeakElement {
 	while(low <= high)
 	{
 		int mid = (low + high) / 2;
-
+		//mid==0 means first element
 		if((mid == 0 || arr[mid - 1] <= arr[mid]) &&
 			(mid == n - 1 || arr[mid + 1] <= arr[mid]))
 			return mid;
