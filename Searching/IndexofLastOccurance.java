@@ -23,7 +23,7 @@ public class IndexofLastOccurance {
 			}
 			else
 			{
-				if(mid==len-1 || arr[mid]!=arr[mid+1])  //mid==0 first element
+				if(mid==len-1 || arr[mid]!=arr[mid+1])  //mid==len-1 first element
 				{
 					return mid;
 				}

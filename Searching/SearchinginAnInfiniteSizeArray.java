@@ -1,6 +1,7 @@
 package Searching;
 
-public class SearchinginAnInfiniteSizeArray {
+public class SearchinginAnInfiniteSizeArray{
+	//infinote size sorted array
 	public static int Search(int arr[], int x)
 	{
 		int i=0;
@@ -17,7 +18,7 @@ public class SearchinginAnInfiniteSizeArray {
 			 i++;
 		 }
 	}
-	//we cant apply binary seacrh because we have to get low + high by 2
+	//we can't apply binary search because we have to get low + high by 2
 	//high is not defined because it is of infinite size array
 	public static int searchelement(int arr[],int x)
 	{

@@ -3,9 +3,6 @@ package Searching;
 public class SquareRootUsingBinarySearch {
 	public static long floorSqrt(long x)
 	 {
-		// Your code here
-		
-	        // Base Cases
 	        if (x == 0 || x == 1)
 	            return x;
 
@@ -35,9 +32,5 @@ public class SquareRootUsingBinarySearch {
 		
 	 
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

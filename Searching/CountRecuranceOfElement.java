@@ -66,13 +66,14 @@ public class CountRecuranceOfElement {
 	public static int countOccurances(int arr[] ,int num)
 	{
 		int firstOccurance=firstOccurancerecursive(arr, num, 0,arr.length);
-		if(firstOccurance==-1)
+		if(firstOccurance==-1) // element not  present 
 		{
 			return -1;
 		}
 		else
 		{
 			return (lastOccurancerecursive(arr, num, 0, arr.length, arr.length)- firstOccurance +1);
+			// +1 because index starts from 0 
 		}
 	}
 }

@@ -1,6 +1,7 @@
 package Searching;
 
 public class PeakElement {
+	//Peak element is element which is greater then its neighbours
 	public static int peakelement(int arr[])
 	{
 		if(arr.length==1)
@@ -15,7 +16,7 @@ public class PeakElement {
 		{
 			return arr[arr.length-1];
 		}
-		for(int i=0;i<arr.length-1;i++)
+		for(int i=1;i<arr.length-1;i++)
 		{
 			if(arr[i]>arr[i-1] && arr[i]>arr[i+1])
 			{
@@ -41,7 +42,6 @@ public class PeakElement {
 		else
 			low = mid + 1;
 	}
-	
 	return -1;
 	}
 }

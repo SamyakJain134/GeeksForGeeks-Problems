@@ -14,16 +14,16 @@ public class SearchInasortedArray {
 			}
 			if(arr[low]<arr[mid]) //left half is sorted
 			{
-				if(num>=arr[low] && num<arr[mid])
+				if(num>=arr[low] && num<arr[mid]) //element is present is left half
 				{
 					high=mid-1;
 				}
-				else
+				else //present in right half
 				{
 					low=mid+1;
 				}
 			}
-			else //right halh is sorted 
+			else //right half is sorted 
 			{
 				if(num<=arr[high] && num>arr[mid])
 				{
