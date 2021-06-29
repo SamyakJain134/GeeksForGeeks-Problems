@@ -74,7 +74,6 @@ public class CountInversioninArray {
 			arr[k]=rightary[j];
 			j++;
 			k++;
-	
 		}
 		return count;
 	}
