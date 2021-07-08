@@ -149,7 +149,7 @@ public class UnionoftwoSortedArrays {
 	        int j=0;
 	        while(i<n && j< m)
 	        {
-	            if(i+1<n &&arr1[i]==arr1[i+1])
+	            if(i+1<n && arr1[i]==arr1[i+1])
 	            {
 	                i++;
 	                //continue;
