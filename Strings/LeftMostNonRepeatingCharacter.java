@@ -50,18 +50,18 @@ public class LeftMostNonRepeatingCharacter {
 		for(int i=0;i<str.length();i++)
 		{
 			int index=arr[str.charAt(i)];
-			if(index==-1)
+			if(index==-1) //character ka first occurance hai
 			{
-				arr[str.charAt(i)]=i;
+				arr[str.charAt(i)]=i; 
 			}
-			else
+			else//character ka phle bhi occurance hai
 			{
 				arr[str.charAt(i)]=-2;
 			}
 		}
 		for(int i=0;i<arr.length;i++)
 		{
-			if(arr[i]>0)
+			if(arr[i]>=0)
 			{
 				res=Math.min(arr[i], res);
 			}

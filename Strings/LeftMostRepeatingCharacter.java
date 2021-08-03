@@ -48,7 +48,7 @@ public class LeftMostRepeatingCharacter {
 		for(int i=0;i<str.length();i++)
 		{
 			int firstIndex=arr[str.charAt(i)];
-			if(firstIndex==-1)
+			if(firstIndex==-1) // not present
 			{
 				arr[str.charAt(i)]=i;
 			}
