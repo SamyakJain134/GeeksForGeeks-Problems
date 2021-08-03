@@ -36,9 +36,10 @@ public class MoveZerosoEnd {
 		
 	}
 
+
 	public static void main(String[] args) {
 		int arr[]= {1,0,0,9,4,5,0,8};
-		movezeroswfficient(arr);
+		//moviezeroPractise(arr);
 		//int arr2[]=movezeros(arr);
 		for(int i=0;i<arr.length;i++)
 		{

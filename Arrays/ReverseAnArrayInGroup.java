@@ -7,7 +7,8 @@ public class ReverseAnArrayInGroup {
 	//arr[] of positive integers of size N. 
 	//Reverse every sub-array group of size K.
 	
-	public static void reverseInGroups(ArrayList<Integer> arr, int n, int k) {
+	public static void reverseInGroups(ArrayList<Integer> arr, int n, int k) 
+		{
 	       
 	       for(int i = 0; i < n; i = i + k)
 	       rev( arr, i, i + (k-1));
@@ -29,7 +30,7 @@ public class ReverseAnArrayInGroup {
 	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
 

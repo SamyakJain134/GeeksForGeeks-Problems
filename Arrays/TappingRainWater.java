@@ -24,8 +24,8 @@ public class TappingRainWater {
 	
 	public static int maxRainWaterEfficient(int arr[])
 	{
-		int leftMax[]=new int[arr.length];
-		int rightMax[]=new int[arr.length];
+		int leftMax[]=new int[arr.length]; //Preprocessing Array
+		int rightMax[]=new int[arr.length];//Preprocessing Array
 		int res=0;
 		leftMax[0]=arr[0];
 		for(int i=1;i<arr.length;i++)

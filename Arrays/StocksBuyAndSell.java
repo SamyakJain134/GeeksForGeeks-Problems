@@ -1,5 +1,8 @@
  package Arrays;
- 
+
+import java.util.ArrayList;
+
+
 public class StocksBuyAndSell {
 	public static int profit(int price[],int start,int end)
 	{
@@ -35,6 +38,49 @@ public class StocksBuyAndSell {
 		}
 		return profit; 
 	}
+	public static ArrayList<ArrayList<Integer> > stockBuySell(int price[], int n) {
+	       ArrayList<ArrayList<Integer> > result = new ArrayList<ArrayList<Integer>>();
+	       int buy=0;
+	       int sell=0;
+	       int flag=0;
+	       for(int i=1;i<n;i++)
+	       {
+	           if(price[i]>=price[i-1] && price[i] !=price[buy])
+	           {
+	               sell++;
+	               flag=1;
+	           }
+	           else if(buy==sell)
+	           {
+	               buy=i;
+	               sell=i;
+	           }
+	           else
+	           {
+	               ArrayList<Integer> vec=new ArrayList<Integer>();
+	               vec.add(buy);
+	               vec.add(sell);
+	               result.add(vec);
+	                buy=i;
+	               sell=i;
+	           }
+	       }
+	       if(flag==0)
+	       {
+	           return result;
+	       }
+	       else if(buy != n-1 && sell==n-1)
+	       {
+	            ArrayList<Integer> temp=new ArrayList<Integer>();
+	               temp.add(buy);
+	               temp.add(sell);
+	                result.add(temp);
+	      
+	       }
+	       return result;
+	    }
+    
+
 	public static void main(String args[])
 	{
 		int proce[]={1,5,3,8,12};
