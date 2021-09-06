@@ -2,25 +2,26 @@ package LinkedList;
 
 import java.util.Scanner;
 
-public class ReversingaLL {
-	public static Node reverseLL(Node head)
+public class FindKthElementfromLastofLinkedList {
+	public static void findKthElement(Node head , int k)
 	{
-		if(head==null || head.next==null)
+		if(head==null)
 		{
-			return head;
+			return ;
 		}
+		int length=0;
 		Node curr=head;
-		Node prev=null;
 		while(curr!=null)
 		{
-			Node next=curr.next;
-			curr.next=prev;
-			prev=curr;
-			curr=next;
+			length++;
+			curr=curr.next;
 		}
-		head=prev;
-		return head;
-				
+		Node curr2=head;
+		for(int i=0;i<length-k;i++)
+		{
+			curr2=curr2.next;
+		}
+		System.out.println(curr2.data);
 	}
 	public static Node takeInput()
 	{
@@ -61,9 +62,7 @@ public class ReversingaLL {
 	}
 	public static void main(String[] args) {
 		Node head=takeInput();
-		Node head2=reverseLL(head);
-		print(head2);
-				
+		findKthElement(head, 3);
 	}
 
 }

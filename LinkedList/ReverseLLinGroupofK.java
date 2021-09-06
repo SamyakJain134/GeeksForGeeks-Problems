@@ -11,7 +11,7 @@ public class ReverseLLinGroupofK {
 		int count=0;
 		while(curr.next!=null && count< k)
 		{
-			 next=curr.next;
+			next=curr.next;
 			curr.next=prev;
 			prev=curr;
 			curr=next;
