@@ -81,5 +81,30 @@ public class LeftMostRepeatingCharacter {
 		}
 		return res;
 	}
+	static int repeatedCharacter(String S)
+    {
+        //using hash table to store count of each character.
+        int firstIndex[]= new int[256]; 
+        for (int i = 0; i <256; i++) 
+            firstIndex[i] = -1; 
+      
+        int res = Integer.MAX_VALUE; 
+        
+        //iterating over the string.
+        for (int i = 0; i < S.length(); i++)
+        {
+            //if current character is not present in hash table,
+            //we store its position or first appearance in hash table.
+            if (firstIndex[S.charAt(i)] == -1) 
+               firstIndex[S.charAt(i)] = i; 
+               
+            //else we compare the position stored in hash table with 
+            //minimum value stored earlier and store their minimum.
+            else
+               res = Math.min(res, firstIndex[S.charAt(i)]); 
+        } 
+        //returning the result.
+        return (res == Integer.MAX_VALUE) ? - 1 : res;
+    }
 
 }

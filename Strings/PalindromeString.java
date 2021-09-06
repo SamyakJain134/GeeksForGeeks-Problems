@@ -21,6 +21,7 @@ public class PalindromeString {
 		}
 		return true;
 	}
+	
 	public static void main(String[] args) {
 		String s="abbaa";
 		System.out.println(usinmgtringBuilder(s));

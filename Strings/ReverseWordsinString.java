@@ -20,7 +20,7 @@ public static void ReverseWords(char []str )
 private static void reverseWords(char[] str, int start, int end)
 {
 
-	while(start<=end)
+	while(start<end)
 	{
 		char temp=str[start];
 		str[start]=str[end];

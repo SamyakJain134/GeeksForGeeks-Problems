@@ -33,7 +33,7 @@ public class MinimumWindowSubString {
 		        		//Kaam ka banda acquire kia hai aapne 
 		        		matchCount++; 
 		        	}
-		        	//Matlab agar p  string me kisi ek character ki frequncy 2 hai auur 2 akready s string mil gai toh matchcount badhana hai vrna kaam ka banda nahi hai n
+		        	//Matlab agar p  string me kisi ek character ki frequncy 2 hai auur 2 already s string mil gai toh matchcount badhana hai vrna kaam ka banda nahi hai n
 		        	
 		        	//collect and release answer
 		        	f1=true;

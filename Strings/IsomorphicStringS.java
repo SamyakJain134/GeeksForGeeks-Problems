@@ -34,6 +34,35 @@ public class IsomorphicStringS {
 		}
 		return true;
 	}
+	public static boolean areIsomorphic(String str1,String str2)
+    {
+        // Your code here
+        int l1=str1.length();
+        int l2=str2.length();
+        if(l1!=l2)
+        {
+            return false ;
+        }
+        int []count1=new int[256];
+        int []count2=new int[256];
+        for(int i=0;i<l1;i++)
+        {
+            count1[str1.charAt(i)-'a']++;
+            count2[str2.charAt(i)-'a']++;
+            
+            
+            
+            if(  count1[str1.charAt(i)-'a']!=
+            count2[str2.charAt(i)-'a'])
+            {
+                return false ;
+            }
+        }
+       
+       return true ; 
+        
+        
+    }
 	public static void main(String args[])
 	{
 		if(isIsomorphic("rfkqyuqf", "jkxyqvnr"))

@@ -53,7 +53,7 @@ public class NaivePatternSearching {
 	}
 	public static void main(String args[])
 	{
-		naivePatternSearchimg("GeeksForGeeks", "For");
+		naivePatternSearchimgDistinctElements("GeeksForGeeks", "For");
 	}
 
 }

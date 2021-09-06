@@ -7,7 +7,6 @@ public class RemoveCommonCharactersandConcainateTWoStrings {
 	    {
 	        String str="";
 	        HashMap<Character,Integer> map=new HashMap<>();
-	        
 	        for(int i=0;i<s2.length();i++)
 	        {
 	            map.put(s2.charAt(i),1);
@@ -39,5 +38,4 @@ public class RemoveCommonCharactersandConcainateTWoStrings {
 	        	return str;
 	        }
 	    }
-
 }
