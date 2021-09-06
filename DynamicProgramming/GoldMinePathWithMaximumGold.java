@@ -13,6 +13,7 @@ public class GoldMinePathWithMaximumGold {
 		System.out.println("Enter Number for columns");
 		int m=s.nextInt();
 		int ary[][]=new int [n][m];
+		//int[][] dp2=new int[n][m];
 		for(int i=0;i<ary.length;i++)
 		{
 			for (int j=0;j<ary[0].length;j++)
@@ -55,6 +56,9 @@ public class GoldMinePathWithMaximumGold {
 		}
 		System.out.println(max);
 	}
+	
+	
+	
 	}
 
 

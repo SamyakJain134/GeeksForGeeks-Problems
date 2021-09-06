@@ -15,7 +15,7 @@ public class ClimbingStairswithVariableJumps {
 			ary[i]=s.nextInt(); // konse element se n tak k kitne moves hai
 		} 
 		int dp[]=new int[n+1]; 
-		dp[n]=1; //Last wale element se whaa jane ke liye ek hi rasta hai 
+		dp[n]=1; //Last wale element se whaa jane ke liye ek hi rasta hai //Chalo hi mat 
 		for (int i=n-1;i>=0;i--)  //store karega i se n jane k kitne raste hai   
 		{
 			for(int j=1;j<=ary[i] && i+j < dp.length ; j++)
@@ -25,5 +25,5 @@ public class ClimbingStairswithVariableJumps {
 		}
 		System.out.println(dp[0]);
 	}
-
+	
 }
