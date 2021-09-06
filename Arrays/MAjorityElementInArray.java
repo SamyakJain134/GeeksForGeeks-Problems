@@ -10,9 +10,8 @@ public class MAjorityElementInArray {
 			{
 				if(arr[i]==arr[j])
 				{
-					count ++;
-					
-			}
+					count ++;	
+				}
 			if(count > arr.length/2)
 				{
 					return i;

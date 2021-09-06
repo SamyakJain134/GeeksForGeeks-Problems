@@ -20,7 +20,6 @@ public class SubArrayWithSumofSizequealstok {
 			{
 				return true;
 			}
-			
 		}
 		return false;
 		

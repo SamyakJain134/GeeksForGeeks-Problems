@@ -29,6 +29,10 @@ public class WindowSlidingTechnique {
 		int curr_Sum=max_sum;
 		for(int i=k;i<arr.length;i++)
 		{
+			// Compute sums of remaining windows by
+	        // removing first element of previous
+	        // window and adding last element of
+	        // current window.
 			curr_Sum=curr_Sum+(arr[i]-arr[i-k]); //kth element me se first elemet - karenge to k consecutive term ka sum aayega 
 			max_sum=Math.max(max_sum, curr_Sum);
 		}

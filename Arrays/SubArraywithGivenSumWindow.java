@@ -44,11 +44,15 @@ public class SubArraywithGivenSumWindow {
 			}
 			if(curr_sum==sum)
 			{
+				int p = end - 1;
+                System.out.println(
+                    "Sum found between indexes " + start
+                    + " and " + p);
 				return true;
 			}
 			if(end<n)
 			{
-				curr_sum=	curr_sum+arr[end];
+				curr_sum=curr_sum+arr[end];
 			}
 			
 		}

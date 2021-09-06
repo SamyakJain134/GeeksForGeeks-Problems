@@ -51,6 +51,4 @@ public class MaximumCircularSubArraySum {
 		int max_circular=arr_sum+NormalmaxSum(arr); //instead of subtracting we add becuase --=+
 		return Math.max(max_circular, maxNormal);
 	}
-	
-
 }

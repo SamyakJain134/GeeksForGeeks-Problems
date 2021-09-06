@@ -86,7 +86,7 @@ public class CheckIfArrayIsSORTEDandROTATED {
  }
  
  public static boolean checkRotatedAndSorted2(int arr[], int num){
-	//In case of increasing
+	 //In case of increasing
 	 //1-MAximum element should be just before the minimum element
 	 //2-First element should be greater then last element
 	 //3-0 se lekr min Index tak increasing hai and maxx index se lekr end tak bhi increewasing hai
@@ -112,7 +112,7 @@ public class CheckIfArrayIsSORTEDandROTATED {
 	 }
 	 boolean res=false;
      //Checking wheather increasing hone ki possibility hai ya decreasing hone ki 
-	 if(maxIndex==minIndex-1)
+	 if(maxIndex==minIndex-1) //phle increase ho rahai hai then mid index aa raha hai 
 	 {
 		 res=incPossibility( arr, num , minIndex , maxIndex);
 		//now check karenge agar 0 se min index increasing hai aur 

@@ -79,6 +79,77 @@ public class StocksBuyAndSell {
 	       }
 	       return result;
 	    }
+	//Only one transaction allowed 
+    public static int maxProfit(int arr[])
+    {
+    	int maxProfit=0;
+    	int minSoFar=arr[0];
+    	for(int i=0;i<arr.length;i++)
+    	{
+    		minSoFar=Math.min(minSoFar, arr[i]);
+    		int profir=arr[i]-minSoFar;
+    		maxProfit=Math.max(profir, maxProfit);
+    	}
+    	return maxProfit;
+    }
+    //Infinite Trasaction alowed
+    public static int maxProfitInfinite(int arr[])
+    {
+    	int buyingdate=0;
+    	int selligdate=0;
+    	int profit=0;
+    	for (int i=1;i<arr.length;i++)
+    	{
+    		if(arr[i]>=arr[i-1])
+    		{
+    			selligdate++;
+    		}
+    		else
+    		{
+    			profit=profit+arr[selligdate]-arr[buyingdate];
+    			buyingdate=selligdate=i;
+    		}
+    	}
+    	profit=profit+arr[selligdate]-arr[buyingdate]; //last loop ke liye hai ye 
+    	return profit;
+    }
+    //Infinite transaction with amount per sell
+    public static int maxProfitonsell(int arr[],int fees)
+    {
+    	//Buy state means ek share hai extra 
+    	//Sell state means clear hai no extra share 
+    	//Purani bought satte ko continue kare ya purani bought state me aaj naya sell kare
+    	
+    	int oldbuystateprofit=-arr[0]; //Phla share khrid rakha hai profit - me hai aur ek share hai 
+    	int oldsoldstateprofit=0; //phle din profit hota hi nahi hai 
+    	
+    	for(int i=1;i<arr.length;i++)	
+    	{
+    		int newBuyingStateProfit=0;
+    		int newSellStateProfit=0;
+    		
+    		if(oldsoldstateprofit - arr[i] > oldbuystateprofit) //aagar purane soldstateprofir me aaj khrida ar ye purane bsp se acha hai toh new bsp ko update karenge
+    		{
+    			newBuyingStateProfit=oldsoldstateprofit - arr[i];
+    		}
+    		else
+    		{
+    			newBuyingStateProfit=oldbuystateprofit;
+    		}
+    		if(oldbuystateprofit+arr[i] -fees > oldsoldstateprofit)
+    		{
+    			newSellStateProfit=oldbuystateprofit+arr[i] -fees;
+    		}
+    		else
+    		{
+    			newSellStateProfit=oldsoldstateprofit;
+    		}
+    		oldbuystateprofit=newBuyingStateProfit;
+    		oldsoldstateprofit =newSellStateProfit;
+    		
+    	}
+    	return oldsoldstateprofit;
+    }
     
 
 	public static void main(String args[])

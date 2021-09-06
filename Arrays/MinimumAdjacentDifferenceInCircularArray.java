@@ -1,9 +1,9 @@
 package Arrays;
 
 public class MinimumAdjacentDifferenceInCircularArray {
-	//Given an array Arr of n integers arranged in a circular fashion. 
-	//Your task is to find the minimum absolute difference between 
-	//adjacent elements.
+		//Given an array Arr of n integers arranged in a circular fashion. 
+		//Your task is to find the minimum absolute difference between 
+		//adjacent elements.
 	public static int minimumAdjacentElements(int arr[])
 	{
 		int min=Integer.MAX_VALUE;
@@ -20,7 +20,13 @@ public class MinimumAdjacentDifferenceInCircularArray {
 		{
 			min=Math.abs(arr[0]-arr[arr.length-1]);
 		}
-		return min;
+		/*
+		 *  int res = Math.abs(arr[1] - arr[0]); 
+		 *  for (int i = 2; i < n; i++) 
+		 *   res= Math.min(res, Math.abs(arr[i] - arr[i - 1])); // // // Checking circular
+		 * link 
+		 *  res = Math.min(res, Math.abs(arr[n - 1] - arr[0]));
+		 */		return min;
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

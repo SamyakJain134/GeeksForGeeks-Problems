@@ -11,6 +11,7 @@ public class KthSmallestElement {
 	        // Return k'th element in  
 	        // the sorted array 
 	        return arr[k-1]; 
+	       
 		}
 
 }

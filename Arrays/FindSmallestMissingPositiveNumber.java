@@ -6,7 +6,7 @@ public class FindSmallestMissingPositiveNumber {
 		// First separate positive and
         // negative number
         int countNegative=segeregate(arr,size);
-        int arr2[]=new  int [size-countNegative];
+        int arr2[]=new int [size-countNegative];
         //This array with contain Positive elements
         int j=0;
         for(int i=countNegative;i<size;i++)
