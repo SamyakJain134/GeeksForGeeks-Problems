@@ -19,7 +19,7 @@ public class MaximumWaterBetweenTwoBuildings {
 			} 
 			//else if height at index i is more than height at index j,  
     		//updating maximum water stored so far and decrementing j.
-			else if (height[j] < height[i]) 
+			else if (height[j] > height[i]) 
 			{ 
 				max = Math.max(max, (j - i - 1) * height[j]); 
 				j--; 

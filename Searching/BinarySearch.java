@@ -11,7 +11,7 @@ public class BinarySearch {
 	{
 		if(startIndex>endIndex)
 		{
-			return -1;
+			return -1; //element not present  
 		}
 		int mid=(startIndex+endIndex)/2;
 		if(arr[mid]==x)
