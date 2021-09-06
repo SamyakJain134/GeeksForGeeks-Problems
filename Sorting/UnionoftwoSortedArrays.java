@@ -31,7 +31,7 @@ public class UnionoftwoSortedArrays {
 		int j=0;
 		while(i<arr.length && j<brr.length )
 		{
-			if(i>0 && arr[i]==arr[i-1])
+			if(i>0 && arr[i]==arr[i-1])//BECAUSE IF SAME ELEMET IS PRESENT TWO TIMES IN AN ARRAY WE NEED O IGNORE IT 
 			{
 				i++;
 				continue;

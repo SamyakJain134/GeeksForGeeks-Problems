@@ -12,7 +12,7 @@ public class FindingTripletSum {
             int k=n-1;
             while(j<k)
             {
-                int sum=arr[i]+arr[j]+arr[k];
+            	 int sum=arr[i]+arr[j]+arr[k];
                 if(sum==0)
                 {
                     return true;
@@ -29,4 +29,5 @@ public class FindingTripletSum {
         }
         return false;
     }
+
 }
